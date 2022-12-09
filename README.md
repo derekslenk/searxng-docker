@@ -16,7 +16,7 @@ Create a new SearXNG  instance in five minutes using Docker
 - Get searxng-docker
   ```sh
   cd /usr/local
-  git clone https://github.com/searxng/searxng-docker.git
+  git clone https://github.com/derekslenk/searxng-docker.git
   cd searxng-docker
   ```
 - Edit the [.env](https://github.com/derekslenk/searxng-docker/blob/master/.env) file to set the hostname and an email
@@ -51,7 +51,7 @@ The SearXNG image proxy is activated by default.
 
 The default [Content-Security-Policy](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Security-Policy) allow the browser to access to ```${SEARXNG_HOSTNAME}``` and ```https://*.tile.openstreetmap.org;```.
 
-If some users wants to disable the image proxy, you have to modify [./Caddyfile](https://github.com/searxng/searxng-docker/blob/master/Caddyfile). Replace the ```img-src 'self' data: https://*.tile.openstreetmap.org;``` by ```img-src * data:;```.
+If some users wants to disable the image proxy, you have to modify [./Caddyfile](https://github.com/derekslenk/searxng-docker/blob/master/Caddyfile). Replace the ```img-src 'self' data: https://*.tile.openstreetmap.org;``` by ```img-src * data:;```.
 
 ## Multi Architecture Docker images
 
